@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 500px;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .card h1 {
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .card ul {
+            text-align: left;
+            padding: 0;
+            margin-top: 20px;
+            list-style: none;
+        }
+
+        .card ul li {
+            margin: 10px 0;
+            color: #555;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .card ul li:before {
+            content: '\2665';
+            position: absolute;
+            left: 0;
+            color: #ff6f61;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .button-container button:hover {
+            background-color: #e35a4f;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Para Ti</h1>
+        <p>Tienes razón en que ya te lo he dicho muchas veces, y entiendo que estés cansada de escuchar palabras. Quiero que veas con hechos lo que haré para cambiar:</p>
+        <ul>
+            <li>Nunca más olvidaré algo importante para ti. Voy a organizarme mejor y anotar las fechas importantes para ti.</li>
+            <li>Voy a ser más atento y demostrarte cada día cuánto te valoro, con detalles que signifiquen algo para ti.</li>
+            <li>También estoy abierto a hacer algo que tú consideres necesario para que podamos sanar esto juntos.</li>
+        </ul>
+        <p>Sé que no puedo pedirte que confíes en mí de inmediato, pero estoy dispuesto a trabajar en esto todos los días para recuperarlo, porque tú eres lo más importante para mí.</p>
+        <div class="button-container">
+            <button onclick="alert('Te amo y estoy aquí para ti siempre. ❤️')">Aceptar</button>
+        </div>
+    </div>
+</body>
+</html>
